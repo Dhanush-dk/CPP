@@ -1,3 +1,3 @@
 #TWO POINTERS
 
-Two Pointers programs for Placement Preparations.
+Two Pointers Programs for Placement Preparations.
