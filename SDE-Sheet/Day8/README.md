@@ -1,1 +1,3 @@
-# Programs based on Greedy Algo
+# Greedy Algo
+
+Programs based on Greedy Algorithm
