@@ -19,7 +19,7 @@ int getData(SinglyLinkedListNode* head1,SinglyLinkedListNode* head2,int diff){
     }
     SinglyLinkedListNode* temp2 = head2;
     while(temp1 != NULL && temp2 != NULL){
-        if(&temp1->data == &temp2->data){
+        if(&temp1->data == &temp2->data && temp1->data == temp2->data){
             return temp1->data;
         }
         temp1 = temp1->next;
