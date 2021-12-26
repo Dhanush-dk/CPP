@@ -20,8 +20,7 @@ public:
         int el = 0;
         for(int i = 0; i < nums.size(); i++){
             if(count == 0) el = nums[i];
-            if(nums[i] == el) count++;
-            else count--;
+            (nums[i] == el) ? count++ : count--;
         }
         return el;
     }
