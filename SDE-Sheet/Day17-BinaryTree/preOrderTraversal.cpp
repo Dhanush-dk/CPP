@@ -13,3 +13,25 @@ public:
         return ans;
     }
 };
+
+
+
+// Iterative soln
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        stack<TreeNode*> s;
+        if(root == NULL) return ans;
+        s.push(root);
+        while(!s.empty()){
+            TreeNode* node = s.top();
+            s.pop();
+            ans.push_back(node->val);
+            if(node->right != NULL) s.push(node->right);
+            if(node->left != NULL) s.push(node->left);
+           
+        }
+        return ans;
+    }
+};
