@@ -1,5 +1,4 @@
 // CHECKING WHETHER THE GRAPH IS BIPARTITE OR NOT USING BREADTH FIRST SEARCH
-
 // { Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
