@@ -31,7 +31,7 @@ class Solution {
 
 // { Driver Code Starts.
 int main() {
-    int tc; //tc = test cases.
+    int tc; //tc = test cases. No of test cases.
     cin >> tc;
     while (tc--) {
         int V, E;
