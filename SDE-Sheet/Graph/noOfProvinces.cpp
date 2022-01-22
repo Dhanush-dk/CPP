@@ -5,7 +5,8 @@ If city a is connected directly with city b, and city b is connected directly wi
   
 A province is a group of directly or indirectly connected cities and no other cities outside of the group.
 
-You are given an n x n matrix isConnected where isConnected[i][j] = 1 if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
+You are given an n x n matrix isConnected where isConnected[i][j] = 1.
+if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
 
 Return the total number of provinces.
 
@@ -23,7 +24,7 @@ public:
         vis[node] = 1;
         vector<int> neighbours = isConnected[node];
         for(int i = 0; i < neighbours.size(); i++){
-            if(i == 1 && vis[i] == 0){
+            if(neighbours[i] == 1 && vis[i] == 0){
                 dfs(i, vis, isConnected);
             }
         }
