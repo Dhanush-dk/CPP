@@ -154,9 +154,12 @@ int main()
     const int n = 4;
     int m = 5;
     cout << update(n) << endl;
-	n = update(n); // CTE since it's const variable. We cannot change the constant variable.
+	// n = update(n); // CTE since it's const variable. We cannot change the constant variable.
     m = update(m);
     cout << m;
     return 0;
 }
 
+Without n-- line the output is 
+16
+25
